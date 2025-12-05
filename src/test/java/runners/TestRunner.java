@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = {"stepdefinitions"},
-        tags = "@make_appointment",
+        //tags = "@make_appointment",
         plugin = {"pretty", "html:target/cucumber-report.html"},
         monochrome = true
 )

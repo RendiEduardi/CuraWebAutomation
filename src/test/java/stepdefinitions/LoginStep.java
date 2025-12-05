@@ -33,7 +33,7 @@ public class LoginStep {
     @And("User clicks login")
     public void user_clicks_login() {
         if (Hooks.isLoggedIn) return;
-        driver.findElement(By.id("btn-login")).click();
+        driver.findElement(By.id("btn-login")).click()
         System.out.println("Login berhasil dilakukan");
     }
 
