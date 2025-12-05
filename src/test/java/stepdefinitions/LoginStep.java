@@ -23,8 +23,6 @@ public class LoginStep {
     @And("User enters username {string} and password {string}")
     public void user_enters_username_and_password(String username, String password) {
         if (Hooks.isLoggedIn) return;
-//        driver.findElement(By.id("txt-username")).sendKeys("John Doe");
-//        driver.findElement(By.id("txt-password")).sendKeys("ThisIsNotAPassword");
         driver.findElement(By.id("txt-username")).clear();
         driver.findElement(By.id("txt-username")).sendKeys(username);
         driver.findElement(By.id("txt-password")).clear();
@@ -32,12 +30,12 @@ public class LoginStep {
         System.out.println("Username dan password berhasil diinput");
     }
 
-//    @And("User clicks login")
-//    public void user_clicks_login() {
-//        if (Hooks.isLoggedIn) return;
-//        driver.findElement(By.id("btn-login")).click();
-//        System.out.println("Login berhasil dilakukan");
-//    }
+    @And("User clicks login")
+    public void user_clicks_login() {
+        if (Hooks.isLoggedIn) return;
+        driver.findElement(By.id("btn-login")).click();
+        System.out.println("Login berhasil dilakukan");
+    }
 
     @Then("User account navigate to make appointment page successfully")
     public void user_account_navigate_to_make_appointment_page_successfully() {

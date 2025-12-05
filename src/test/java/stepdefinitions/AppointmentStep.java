@@ -11,8 +11,11 @@ import java.util.Objects;
 
 public class AppointmentStep {
 
+    //mengambil instance driver yang dibuat di Hooks sehingga semua step definition bisa menggunakan browser yang sama.
     private final WebDriver driver = Hooks.driver;
     private final WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+    //WebDriver driver = Hooks.driver;
 
     @Given("User is on make appointment page")
     public void user_is_on_make_appointment_page() {

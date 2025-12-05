@@ -5,7 +5,7 @@ Feature: Login and Appointment
   Scenario: User make appointment and login with valid data
     Given User navigates to appointment page
     When User click appointment button
-    And User enters username "john doe" and password "ThisIsNotAPassword"
+    And User enters username "" and password "ThisIsNotAPassword"
     And User clicks login
     Then User account navigate to make appointment page successfully
 
