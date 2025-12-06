@@ -26,14 +26,14 @@ public class LoginStep {
         driver.findElement(By.id("txt-username")).clear();
         driver.findElement(By.id("txt-username")).sendKeys(username);
         driver.findElement(By.id("txt-password")).clear();
-        driver.findElement(By.id("txt-password")).sendKeys(password);
+        driver.findElement(By.id("txt-password")).sendKeys(password)
         System.out.println("Username dan password berhasil diinput");
     }
 
     @And("User clicks login")
     public void user_clicks_login() {
         if (Hooks.isLoggedIn) return;
-        driver.findElement(By.id("btn-login")).click()
+        driver.findElement(By.id("btn-login")).click();
         System.out.println("Login berhasil dilakukan");
     }
 
