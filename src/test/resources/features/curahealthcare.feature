@@ -18,4 +18,5 @@ Feature: Login and Appointment
     And User select date "05/12/2025"
     And User input comment "mau cek medical checkup"
     And User clicks book appointment
+#    Then User account navigate to make appointment page successfully
 
