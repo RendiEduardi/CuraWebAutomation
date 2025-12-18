@@ -52,7 +52,6 @@ public class Hooks {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
-//        // Register a shutdown hook to quit the driver when the JVM exits (prevents quitting per-scenario)
 //        if (!shutdownHookRegistered) {
 //            Runtime.getRuntime().addShutdownHook(new Thread(() -> {
 //                try {
