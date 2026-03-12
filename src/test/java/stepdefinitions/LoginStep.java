@@ -25,7 +25,7 @@ public class LoginStep {
         if (Hooks.isLoggedIn) return;
         driver.findElement(By.id("txt-username")).clear();
         driver.findElement(By.id("txt-username")).sendKeys(username);
-        driver.findElement(By.id("txt-password")).clear() //test
+        driver.findElement(By.id("txt-password")).clear();
         driver.findElement(By.id("txt-password")).sendKeys(password); //fixing error untuk cek log di jenkins
         System.out.println("Username dan password berhasil diinput");
     }
